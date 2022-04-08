@@ -1,0 +1,33 @@
+name: Main
+version: '${project.version}'
+main: com.runicrealms.plugin.runicplayermanager.runicauthenticator.Main
+api-version: 1.16
+prefix: RPM
+authors: [ joshscoper ]
+description: The Player Management/Authentication Solution for Runic Realms
+website: https://www.runicrealms.com
+
+commands:
+  auth:
+    description: Command to RunicAuth commands
+    aliases: ["2fa", "authenticator", "auth"]
+
+permissions:
+  runicauth.enable:
+    default: op
+  runicauth.disable:
+    default: op
+  runicauth.enable.other:
+    default: false #Only allow console by default
+  runicauth.disable.other:
+    default: false
+  runicauth.lock:
+    default: op
+  runicauth.use:
+    default: op
+  runicauth.reload:
+    default: false #Only allow console by default
+  runicauth.reset:
+    default: op
+  runicauth.reset.other:
+    default: false #Only allow console by default
